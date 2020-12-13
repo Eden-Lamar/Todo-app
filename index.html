@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<title>Todo App</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="top-container">
+				<h1>Todo App</h1>
+				<form id="search-form"></form>
+				<form id="form">
+					<div class="join-ma join-ma-input">
+						<input type="text" placeholder="My Todo..." maxlength="50" id="todo" />
+						<button class="btn-top" id="todo-btn"><i class="fas fa-plus" role="button"></i></button>
+					</div>
+					<div class="join-ma join-ma-search">
+						<input type="search" name="search" id="search" placeholder="Search" form="search-form" />
+						<button class="btn-top" id="search-btn" form="search-form" role="button">
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="bottom-container">
+				<ul id="list-container">
+					<!-- <div class="join-ms">
+						<li>
+							<p></p>
+						</li>
+						<div class="btn-group join-ms2">
+							<span>
+								<button class="btn btn-green"><i class="fas fa-check"></i></button>
+							</span>
+							<span>
+								<button class="btn btn-red"><i class="far fa-trash-alt"></i></button>
+							</span>
+						</div>
+					</div> -->
+				</ul>
+			</div>
+		</div>
+
+		<script src="./app.js"></script>
+	</body>
+</html>
